@@ -1,0 +1,186 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body{
+      background-color: whitesmoke;
+      font-size: 1.5rem;
+}
+
+a{
+      text-decoration: none;
+}
+
+.navbar{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 10vh;
+      height: auto;
+      width: 100%;
+      padding-inline: 20px;
+      background-color: steelblue;
+      position: fixed;
+      z-index: 50;
+      transition: top 0.3s;
+}
+
+.navbar .hidden{
+      top: -10%;
+}
+
+.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; 
+    }
+
+.navbar a{
+      color: white;
+      text-decoration: none;
+}
+
+.navItems{
+      display: flex;
+      align-items: center;
+}
+
+.navItems a{
+      color: white;
+      margin-inline: 5px;
+}
+
+.navItems a:hover{
+      border-bottom: 1px solid white;
+      border-top: 1px solid white;
+      border-radius: 5px;
+}
+
+
+
+.hero{
+      
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      text-align: center;
+      min-height: 90vh;
+      height: auto;
+}
+.profileInfo{
+      max-width: 40vw;
+      height: 25vh;
+      margin-top: 5%;
+      background-color: steelblue;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      border-radius: 15px;
+      line-height: 2rem;
+}
+
+.goals{
+      min-height: 100%;
+      height: auto;
+      width: 100%;
+      background-color: whitesmoke;
+}
+
+.myGoals{
+      background-color: steelblue;
+      width: 90%;
+      min-height: 90%;
+      height: auto;
+      position: relative;
+      top: 10%;
+      margin-inline: auto;
+      border-radius: 20px;
+      padding-block: 15px;
+      padding-inline: 5%;
+      margin-bottom: 5%;
+      text-align: justify;
+      color: white;
+}
+
+.myGoals ol li{
+      line-height: 1.5rem;
+}
+
+
+
+.myGoals h2{
+     text-align: center;
+      margin-bottom: 10px;
+      color: white;
+}
+
+.footer{
+      min-height: 20%;
+      height: auto;
+      background-color: steelblue;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 20px;
+
+}
+
+.links{
+      display: flex;
+      flex-direction: column;
+}
+
+@media only screen and (max-width: 570px) {
+      .hero {
+        display: block;
+      }
+    
+      .myGoals {
+        width: 100%;
+        margin-top: 10vh;
+        font-size: 1.3rem;
+      }
+
+      .profileInfo{
+      max-width: 80%;
+      margin-inline: auto;
+      font-size: 1.3rem;
+      }
+
+      .Goal{
+            font-size: 1.8rem;
+      }
+
+      .Goal p{
+            font-size: 1rem;
+      }
+
+      .enquires{
+            font-size: 1rem;
+      }
+
+      .copyRight{
+            font-size: 1rem;
+            margin-left: 5px;
+      }
+}
+
+@media only screen and (max-width: 900px){
+      .Goal {
+           font-size: 1.8rem;
+           margin-right: 10px;
+          }
+
+      .profileInfo{
+            max-width: 100%;
+            margin-right: 10px;
+            height: 15%;
+            line-height: 2.5rem;
+      }
+}
+    
